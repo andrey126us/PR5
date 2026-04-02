@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фигуры"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginBottom="16dp">
+
+        <!-- Квадрат 1 -->
+        <View
+            android:id="@+id/square1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FF0000"
+            android:layout_margin="8dp" />
+
+        <!-- Круг 1 (используем ImageView с drawable-кругом) -->
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/circle_blue"
+            android:layout_margin="8dp" />
+
+        <!-- Квадрат 2 -->
+        <View
+            android:id="@+id/square2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00FF00"
+            android:layout_margin="8dp" />
+
+        <!-- Круг 2 -->
+        <ImageView
+            android:id="@+id/circle2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/circle_blue"
+            android:layout_margin="8dp" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Об авторе"
+            android:layout_margin="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
