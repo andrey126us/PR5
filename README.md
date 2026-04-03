@@ -17,7 +17,7 @@
 
 ### Задание 1. Создание главной Activity (MainActivity)
 
-Создан новый проект `MultiWindowLab` с шаблоном Empty Views Activity. В файле `activity_main.xml` размещены:
+Создан новый проект MultiWindowLab с шаблоном Empty Views Activity. В файле activity_main.xml размещены:
 - TextView с заголовком;
 - две кнопки: «Настройки» и «Об авторе»;
 - TextView для отображения результата настроек.
@@ -30,7 +30,7 @@
 
 ### Задание 2. Создание Activity «Настройки» (SettingsActivity)
 
-Создана новая Activity через мастер: `SettingsActivity` с разметкой `activity_settings.xml`. В разметке размещены три RadioButton (красный, зелёный, синий) и кнопка «Сохранить». В коде `SettingsActivity` реализована отправка результата обратно в MainActivity через `setResult()`.
+Создана новая Activity через мастер: SettingsActivity с разметкой activity_settings.xml. В разметке размещены три RadioButton (красный, зелёный, синий) и кнопка «Сохранить». В коде SettingsActivity реализована отправка результата обратно в MainActivity через setResult().
 
 ![Разметка настроек](media/2.png)
 
@@ -40,7 +40,7 @@
 
 ### Задание 3. Создание Activity «Об авторе» (AboutActivity)
 
-Создана `AboutActivity` с информацией об авторе (ФИО, группа) и кнопкой «Назад». Для запуска используется `startActivity()` без возврата результата.
+Создана AboutActivity с информацией об авторе (ФИО, группа) и кнопкой «Назад». Для запуска используется startActivity() без возврата результата.
 
 ![Разметка AboutActivity](media/3.png)
 
@@ -54,10 +54,10 @@
 
 ### Задание 4. Реализация навигации и получение результата в MainActivity
 
-В `MainActivity` добавлены обработчики:
-- для кнопки «Настройки» — `startActivityForResult()` с кодом запроса;
-- для кнопки «Об авторе» — `startActivity()`.
-Переопределён метод `onActivityResult()`: при получении результата из SettingsActivity изменяется цвет фона главного экрана и выводится сообщение о выбранном цвете.
+В MainActivity добавлены обработчики:
+- для кнопки «Настройки» — startActivityForResult() с кодом запроса;
+- для кнопки «Об авторе» — startActivity().
+Переопределён метод onActivityResult(): при получении результата из SettingsActivity изменяется цвет фона главного экрана и выводится сообщение о выбранном цвете.
 
 ![Обработчики в MainActivity](media/5.png)
 
